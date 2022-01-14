@@ -1,0 +1,33 @@
+{
+    "name": "mbabker/proxy-generator-bug",
+    "type": "project",
+    "license": "MIT",
+    "description": "Demo app reproducing proxy generator bug",
+    "require": {
+        "php": "^8.1",
+        "ext-PDO": "*",
+        "composer-runtime-api": "^2.0",
+        "doctrine/dbal": "^3.2",
+        "doctrine/orm": "^2.11"
+    },
+    "require-dev": {
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan": "1.4.0",
+        "phpstan/phpstan-doctrine": "1.0.2"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "phpstan/extension-installer": true
+        },
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
